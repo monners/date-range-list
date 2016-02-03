@@ -38,7 +38,8 @@ export default class App extends Component {
             <div className='app-container'>
                 <h1>Date Range Picker</h1>
                 <DatePicker
-                    onSelect={this.handleSelect}/>
+                    onSelect={this.handleSelect}
+                    value={this.state.selectedRange}/>
                 <Button handleClick={this.handleButtonClick}>Add current range to list</Button>
 
                 <RangeList items={this.state.ranges} />

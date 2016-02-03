@@ -7,10 +7,9 @@ import './style.date-picker.scss';
 export default class DatePicker extends Component {
     render() {
         return (
-            <div>
-                <DateRangePicker
-                    onSelect={this.props.onSelect}/>
-            </div>
+            <DateRangePicker
+                onSelect={this.props.onSelect}
+                value={this.props.value}/>
         );
     }
 }
