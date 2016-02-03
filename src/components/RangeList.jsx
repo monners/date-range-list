@@ -18,6 +18,11 @@ export default class RangeList extends Component {
     }
 
     render() {
+        // Ensure there are list items to populate
+        if (!this.props.items.length) {
+            return <span className='non-selected'>No range selected</span>;
+        }
+
         return (
             <div className='range-list-container'>
                 <ul className='range-list'>
@@ -28,6 +33,7 @@ export default class RangeList extends Component {
     }
 }
 
+// We're expecting an array of objects
 RangeList.propTypes = {
-    items: React.PropTypes.array
+    items: React.PropTypes.arrayOf(React.PropTypes.object)
 };

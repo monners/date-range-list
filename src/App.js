@@ -23,9 +23,12 @@ export default class App extends Component {
     };
 
     handleButtonClick = () => {
-        this.setState({
-            ranges: [...this.state.ranges, this.state.selectedRange]
-        });
+        // Make sure a selected range exists
+        if (!!this.state.selectedRange) {
+            this.setState({
+                ranges: [...this.state.ranges, this.state.selectedRange]
+            });
+        }
     };
 
     render() {
