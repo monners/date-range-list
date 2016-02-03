@@ -25,3 +25,4 @@ So, guess how much I love working with poorly-documented components?!  Yeah, no.
 npm install
 npm start
 ```
+Then check out the project at: `http://localhost:3000`
