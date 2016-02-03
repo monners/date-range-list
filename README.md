@@ -7,6 +7,7 @@ Date Range List
 * Also, we don't have any mechanism for global state (because this is *tiny*) - I'd recommend redux for something that requires a bit more oomph.
 * Styles are pretty bare - Let's call it *minimalism*
 * I've opted to make the dates a bit more human-readable, which wasn't in the spec.  Sorry.
+* Also not in the spec (which I haven't addressed) is no condition preventing duplicate ranges from being added to the list.  Just an observation, but that's probably not desired (and a missed opportunity to use JavaScript sets!)
 
 ##Structure and Style ಠ_ಠ
 I like to group components and their styles together.  I also like to group components by either role, location, or functionality, such as `/common /shared /master /accountManagement /etc`, but for something this size I've been a bit lazy.
