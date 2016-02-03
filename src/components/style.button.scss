@@ -1,0 +1,19 @@
+.button-wrapper {
+    display: block;
+    position: relative;
+    margin: 15px 0;
+
+    button {
+        padding: 12px 20px;
+        border: 2px solid #2b2b2b;
+        border-radius: 0;
+        color: #2b2b2b;
+        background: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #2b2b2b;
+        color: white;
+    }
+}

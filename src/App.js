@@ -5,6 +5,8 @@ import DatePicker from './components/DatePicker';
 import Button from './components/Button';
 import RangeList from './components/RangeList';
 
+// Base Style Import
+import './scss/base.scss';
 
 
 export default class App extends Component {
@@ -34,7 +36,7 @@ export default class App extends Component {
     render() {
         return (
             <div className='app-container'>
-                <h1>App</h1>
+                <h1>Date Range Picker</h1>
                 <DatePicker
                     onSelect={this.handleSelect}/>
                 <Button handleClick={this.handleButtonClick}>Add current range to list</Button>

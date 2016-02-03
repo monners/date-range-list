@@ -1,0 +1,9 @@
+/* Super-simple base styles to make everything not suck */
+@import './typography.scss';
+
+.app-container {
+    display: block;
+    position: relative;
+    padding: 40px 20px;
+    font-family: Helvetica, Arial, sans-serif;
+}

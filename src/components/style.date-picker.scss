@@ -9,6 +9,8 @@ $ns: DateRangePicker;
   margin-bottom: 10px;
   padding: 0;
   position: relative;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 
   &__Legend {
@@ -97,6 +99,8 @@ $ns: DateRangePicker;
     display: inline-block;
     margin: 0 20px;
     position: relative;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     width: 275px;
   }
