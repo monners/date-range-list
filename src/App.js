@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from './components/Button';
+import DateRangePicker from 'react-daterange-picker';
 
 export default class App extends Component {
 constructor() {
@@ -20,6 +21,7 @@ render() {
                 <h1>App</h1>
                 <Button handleClick={this.handleClick.bind(null, 'blerg')}>Click me!</Button>
                 <span>{this.state.selectedRange}</span>
+                <DateRangePicker />
             </div>
         );
     }
