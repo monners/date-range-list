@@ -14,7 +14,7 @@ I like to group components and their styles together.  I also like to group comp
 Speaking of lazy. Linting!  Yeah, I probably could have foregone the setup of an `.editorconfig` and `.eslintrc`, but I'm lazy.  This helps me not be that when it comes to consistency.  Mostly...
 
 ##Room for Improvement (┛◉Д◉)┛彡┻━┻
-I'm not entirely happy with how I've handled the parsing of the DateRange objects.  This just screams for a helper function that can be properly unit tested, but I didn't want to go *too* hardcore on the boilerplate.  At the very list there's the propType check to make sure we're not passing in anything *too* silly.
+I'm not entirely happy with how I've handled the parsing of the DateRange objects.  This just screams for a helper function that can be properly unit tested, but I didn't want to go *too* hardcore on the boilerplate.  At the very least there's the propType check to make sure we're not passing in anything *too* silly.
 
 Also, the styles and container markup.  As is, it's not exactly a firm foundation to build on.  My approach for *real* builds is to start with typography and standard content, then nail the master container styles, *then* start the components.  In the interests of time, I opted not to do that.
 
