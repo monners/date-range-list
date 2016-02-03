@@ -1,27 +1,42 @@
 import React, { Component } from 'react';
+
+// Custom Components
+import DatePicker from './components/DatePicker';
 import Button from './components/Button';
-import DateRangePicker from 'react-daterange-picker';
+
+
 
 export default class App extends Component {
-constructor() {
-    super();
-    this.state = {
-        selectedRange: 'bar',
-        ranges: []
+    constructor() {
+        super();
+        this.state = {
+            selectedRange: null,
+            ranges: []
+        };
+    }
+
+    handleSelect = (range, states) => {
+        this.setState({
+            selectedRange: range
+        });
     };
-}
 
-handleClick = (foo) => {
-    this.setState({selectedRange: foo});
-};
+    handleButtonClick = () => {
+        this.setState({
+            ranges: [...this.state.ranges, this.state.selectedRange]
+        });
+    };
 
-render() {
-    return (
+    render() {
+        return (
             <div className='app-container'>
                 <h1>App</h1>
-                <Button handleClick={this.handleClick.bind(null, 'blerg')}>Click me!</Button>
-                <span>{this.state.selectedRange}</span>
-                <DateRangePicker />
+                <DatePicker
+                    onSelect={this.handleSelect}/>
+                <Button handleClick={this.handleButtonClick}>Add current range to list</Button>
+
+                {console.log('selectedRange: ', this.state.selectedRange)}
+                {console.log('ranges: ', this.state.ranges)}
             </div>
         );
     }
