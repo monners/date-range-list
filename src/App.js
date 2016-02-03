@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // Custom Components
 import DatePicker from './components/DatePicker';
 import Button from './components/Button';
+import RangeList from './components/RangeList';
 
 
 
@@ -35,8 +36,7 @@ export default class App extends Component {
                     onSelect={this.handleSelect}/>
                 <Button handleClick={this.handleButtonClick}>Add current range to list</Button>
 
-                {console.log('selectedRange: ', this.state.selectedRange)}
-                {console.log('ranges: ', this.state.ranges)}
+                <RangeList items={this.state.ranges} />
             </div>
         );
     }
